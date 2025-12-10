@@ -16,28 +16,31 @@
           <legend>Dados pessoais</legend>
 
           <label for="userName">Nome</label>
-          <input type="text" name="userName" required />
+          <input id=" userName" type="text" name="userName" required />
           <br />
           <label for="userAge">Idade</label>
-          <input type="number" name="userAge min="12" max="100" required />
+          <input id="userAge" type="number" name="userAge min="12" max="100"
+          required />
           <br />
           <label for="birthDate">Data de nascimento</label>
-          <input type="date" name="birthDate" />
+          <input id="birthDate" type="date" name="birthDate" />
           <br />
           <label for="userEmail">Email</label>
-          <input type="email" name="userEmail" required />
+          <input id="userEmail" type="email" name="userEmail" required />
           <br />
 
           <label for="userPhoneNumber">Telefone</label>
           <input
+            id="userPhoneNumber"
             type="tell"
             name="userPhoneNumber"
             pattern="[0-9]{11}"
             placeholder="DDD + numero sem espaço ou hifen"
           />
           <br />
-          <input type="file" accept="image/*" name="userImage" />
           <label for="userImage">Upload de foto</label>
+          <input id="userImage" type="file" accept="image/*" name="userImage" />
+
           <br />
         </fieldset>
         <fieldset>
@@ -47,10 +50,20 @@
           <input type="radio" name="userGender" value="Femenino" />
           <label for="userGender">Femenino</label>
 
-          <input type="radio" name="userGender" value="Masculino" />
+          <input
+            id="userGender"
+            type="radio"
+            name="userGender"
+            value="Masculino"
+          />
           <label for="userGender">Masculino</label>
 
-          <input type="radio" name="userGender" value="NotInformed" />
+          <input
+            id="userGender"
+            type="radio"
+            name="userGender"
+            value="NotInformed"
+          />
           <label for="userGender">Prefiro não informar</label>
           <br />
           <label for="maritalStatus">Estado civil:</label>
@@ -64,7 +77,7 @@
           </select>
           <br />
           <label for="userState">Estado:</label>
-          <select name="userState" required>
+          <select id="userState" name="userState" required>
             <option value="NotInformed">Selecione...</option>
             <option value="acre">Acre</option>
             <option value="alagoas">Alagoas</option>
@@ -96,23 +109,23 @@
           </select>
           <br />
           <label for="userCity">Cidade:</label>
-          <input type="text" name="userCity" />
+          <input id="userCity" type="text" name="userCity" />
         </fieldset>
         <br />
         <fieldset>
           <legend>Hábitos</legend>
           <p>Redes sociais</p>
 
-          <input type="checkbox" name="social" value="instagram" />
+          <input id="social" type="checkbox" name="social" value="instagram" />
           <label for="social">instagram</label>
           <br />
-          <input type="checkbox" name="social" value="facebook" />
+          <input id="social" type="checkbox" name="social" value="facebook" />
           <label for="social">Facebook</label>
           <br />
-          <input type="checkbox" name="social" value="linkedin" />
+          <input id="sociais" type="checkbox" name="social" value="linkedin" />
           <label for="social">linkedin</label>
           <br />
-          <input type="checkbox" name="social" value="X" />
+          <input id="social" type="checkbox" name="social" value="X" />
           <label for="social">X</label>
         </fieldset>
 
