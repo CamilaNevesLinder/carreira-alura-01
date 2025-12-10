@@ -52,8 +52,8 @@
 
           <input type="radio" name="userGender" value="NotInformed" />
           <label for="userGender">Prefiro não informar</label>
-
-          <label for="maritalStatus">Estado civil</label>
+          <br />
+          <label for="maritalStatus">Estado civil:</label>
           <select name="maritalStatus">
             <option value="NotInformed">Selecione...</option>
             <option value="Casado">Casado</option>
@@ -62,9 +62,10 @@
             <option value="União estavel">União estavel</option>
             <option value="Viúvo">Viúvo</option>
           </select>
-
+          <br />
           <label for="userState">Estado:</label>
           <select name="userState" required>
+            <option value="NotInformed">Selecione...</option>
             <option value="acre">Acre</option>
             <option value="alagoas">Alagoas</option>
             <option value="amapa">Amapá</option>
@@ -93,9 +94,26 @@
             <option value="sergipe">Sergipe</option>
             <option value="tocantins">Tocantins</option>
           </select>
-
-          <label for="userCity">Cidade</label>
+          <br />
+          <label for="userCity">Cidade:</label>
           <input type="text" name="userCity" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes sociais</p>
+
+          <input type="checkbox" name="social" value="instagram" />
+          <label for="social">instagram</label>
+          <br />
+          <input type="checkbox" name="social" value="facebook" />
+          <label for="social">Facebook</label>
+          <br />
+          <input type="checkbox" name="social" value="linkedin" />
+          <label for="social">linkedin</label>
+          <br />
+          <input type="checkbox" name="social" value="X" />
+          <label for="social">X</label>
         </fieldset>
 
         <button type="submit">Enviar</button>
