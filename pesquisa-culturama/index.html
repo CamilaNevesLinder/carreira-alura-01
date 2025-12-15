@@ -49,8 +49,9 @@
             type="tell"
             name="userPhoneNumber"
             pattern="[0-9]{11}"
-            placeholder="DDD + numero sem espaço ou hifen"
+            placeholder="DDD + numero sem espaço ou hifen" aria-describedby="phoneHelp"
           />
+          <small id="phoneHelp">prencha com 11 digitos no formato: DDD+ búmeros sem espaços ou hifen.</small>
           <br />
           <label for="userImage">Upload de foto</label>
           <input id="userImage" type="file" accept="image/*" name="userImage" />
